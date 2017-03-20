@@ -124,6 +124,8 @@ In Eclipse --->  Help ---> Marketplace ---> Search and Install plug in called *�
 
 
 If everything goes well, Gradle project will get import with following folder structure 
+
+
 ![Folder](Folder_Structure.png "Folder Structure of Imported Project")
 
 #### Sample Scripting:
@@ -150,9 +152,12 @@ User can change the script and Object repository as per project requirement and 
 
 #### Jenkins –                       *[Optional in case of Local configuration]*
 ##### Download
-..* Download the Jenkins from <https://jenkins.io/>      … Zip file will get download.
-..* Download Jenkins.war  <https://updates.jenkins-ci.org/download/war/>         
-Unzip the Jenkins folder and paste the downloaded war (“Jenkins.war”) File to Jenkins folder.
+
+  * Download the Jenkins from <https://jenkins.io/>      … Zip file will get download.*
+  * Download Jenkins.war  <https://updates.jenkins-ci.org/download/war/> *    
+  
+*Unzip the Jenkins folder and paste the downloaded war (“Jenkins.war”) File to Jenkins folder.*
+
 
 #### Subversion [SVN]:
 Download and configure SVN.
@@ -202,6 +207,23 @@ Add following plugins by traversing on Manage Jenkins ---> Manage PlugIns
 Let’s understand, how Open2Test for selenium framework works
    #### Higher Level Overview
 
+![Higher_Overview](Higher_overview.png "Higher Level Overview")
 
-
+   #### Read Utility File
+   
+   ![Read_utili](Read_util.png "Read Utility File")
+   
+   #### Script Execution
+   
+   ![Script_Execute](Script_Execute.png "Script Execution")
+   
+   
+   #### Test Suite to Test Script
+   ![TestSuite_TestScript](TestSuite_TestScript.png "Test Suite to Test Script")
+   
+   #### Test Scripts Reads Test Data
+   
+   ![TestScript_TestData](TestScript_TestDatat.png "Test Scripts Reads Test Data")
+   
+   
 
