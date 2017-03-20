@@ -1,0 +1,75 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+
+
+
+apply plugin: 'distribution'
+
+allprojects {
+    apply plugin: 'groovy'
+    apply plugin: 'idea'
+   
+    group = 'com.bmuschko'
+    version = '2.2.5'
+    defaultTasks 'clean', 'build', 'createAllDeliverables'
+}
+
+  
+
+repositories {
+   flatDir {
+       dirs 'libs'
+   }
+}
+
+ 
+dependencies {
+
+       compile fileTree(dir: 'libs', include: '*.jar')
+      
+    
+       runtime name:  "gradle-wrapper";
+  
+      
+}
+
+
+  task wrapper(type: Wrapper){
+  gradleVersion = '3.2.1'
+  }
+  
+  
+
+task compile {
+    doLast {
+        println 'compiling source'
+    }
+}
+
+task compileTest(dependsOn: compile) {
+    doLast {
+        println 'compiling unit tests'
+    }
+}
+
+task test1(dependsOn: [compile, compileTest]) {
+    doLast {
+        println 'running unit tests'
+    }
+}
+
+task dist(dependsOn: [compile, test]) {
+    doLast {
+        println 'building the distribution'
+    }
+}
+
+
+task run {
+    doLast {
+        println 'Default Running!'
+        java SeleniumWD.java
+    }
+}
+

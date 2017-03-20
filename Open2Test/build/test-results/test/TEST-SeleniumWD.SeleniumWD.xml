@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SeleniumWD.SeleniumWD" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-08T06:59:39" hostname="INPUNSSP700004" time="49.226">
+  <properties/>
+  <testcase name="readUtilFile" classname="SeleniumWD.SeleniumWD" time="49.226"/>
+  <system-out><![CDATA[ff
+
+ ScriptName  TC021.xlsx
+2 | launchapp | file:///E:/Open%202Test%20%20c%20folder%20Back%20UP/New%20folder%20(3)/Xlsx_Testing/O2T_RegTest_Ph11/O2T_RegTest_Ph11/o2t_testweb/Datepicker_JQuery2.1.1_en.html |  | 
+3 | screencaptureoption | perform;check;storevalue |  | 
+5 | wait | 3000 |  | 
+6 | perform | calendar;cal_datepicker1_e | setdate:02-26-2017 | TI200
+7 | wait | 3000 |  | 
+8 | perform | calendar;cal_datepicker1_e | setdate:03-22-2017 | TI201
+9 | wait | 3000 |  | 
+10 | perform | calendar;cal_datepicker1_e | setdate:03-08-2017 | TI202
+11 | wait | 3000 |  | 
+12 | perform | calendar;cal_datepicker1_e | setdate:03-08-2018 | TI203
+13 | wait | 3000 |  | 
+14 | perform | calendar;cal_datepicker1_e | setdate:03-08-2016 | TI204
+15 | perform | calendar;cal_datepicker1_e | setdate:03-06-2017 | 
+16 | wait | 3000 |  | 
+17 | screencapture | 3000 |  | 
+ ScriptName  TC022.xlsx
+2 | launchapp | file:///E:/Open%202Test%20%20c%20folder%20Back%20UP/New%20folder%20(3)/Xlsx_Testing/O2T_RegTest_Ph11/O2T_RegTest_Ph11/o2t_testweb/Datepicker_JQuery2.1.1_en.html |  | 
+3 | screencaptureoption | perform; |  | 
+5 | wait | 3000 |  | 
+6 | perform | calendar;cal_datepicker2_e | setdate:02-26-2017 | TI205
+7 | perform | calendar;cal_datepicker2_e | setdate:03-18-2017 | TI206
+8 | perform | calendar;cal_datepicker2_e | setdate:03-08-2017 | TI207
+9 | perform | calendar;cal_datepicker2_e | setdate:03-08-2018 | TI208
+10 | perform | calendar;cal_datepicker2_e | setdate:03-08-2016 | TI209
+ ScriptName  TC023.xlsx
+2 | launchapp | file:///E:/Open%202Test%20%20c%20folder%20Back%20UP/New%20folder%20(3)/Xlsx_Testing/O2T_RegTest_Ph11/O2T_RegTest_Ph11/o2t_testweb/Datepicker_JQuery2.1.1_en.html |  | 
+3 | screencaptureoption | perform; |  | 
+5 | wait | 3000 |  | 
+6 | perform | calendar;cal_datepicker3_e | setdate:02-26-2017 | TI210
+7 | wait | 3000 |  | 
+8 | perform | calendar;cal_datepicker3_e | setdate:03-18-2017 | TI211
+9 | wait | 3000 |  | 
+10 | perform | calendar;cal_datepicker3_e | setdate:03-08-2017 | TI212
+11 | wait | 3000 |  | 
+12 | perform | calendar;cal_datepicker3_e | setdate:03-08-2018 | TI213
+13 | wait | 3000 |  | 
+14 | perform | calendar;cal_datepicker3_e | setdate:03-08-2016 | TI214
+Error Occured, while reading TestScript File null
+15 | wait | 3000 | setdate:03-08-2016 | TI214
+ ScriptName  TC024.xlsx
+2 | launchapp | file:///E:/Open%202Test%20%20c%20folder%20Back%20UP/New%20folder%20(3)/Xlsx_Testing/O2T_RegTest_Ph11/O2T_RegTest_Ph11/o2t_testweb/Datepicker_JQuery2.1.1_en.html |  | 
+3 | screencaptureoption | perform; |  | 
+5 | wait | 3000 |  | 
+6 | perform | calendar;cal_datepicker3-2_e | setdate:02-26-2017 | TI215
+7 | perform | calendar;cal_datepicker3-2_e | setdate:03-18-2017 | TI216
+8 | perform | calendar;cal_datepicker3-2_e | setdate:03-08-2017 | TI217
+9 | perform | calendar;cal_datepicker3-2_e | setdate:03-08-2018 | TI218
+10 | perform | calendar;cal_datepicker3-2_e | setdate:03-08-2016 | TI219
+Test end.
+Test end.
+]]></system-out>
+  <system-err><![CDATA[1488956380836	geckodriver	INFO	Listening on 127.0.0.1:15086
+Mar 08, 2017 12:29:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+1488956381445	mozprofile::profile	INFO	Using profile path C:\Users\046191\AppData\Local\Temp\rust_mozprofile.s4PDZNaeKANC
+1488956381445	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe
+1488956381461	geckodriver::marionette	INFO	Connecting to Marionette on localhost:65297
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+[GFX1-]: VendorIDMismatch 0x8086 0x1414
+Mar 08, 2017 12:29:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 08, 2017 12:30:22 PM SeleniumWD.SeleniumWD execKeywordScript
+SEVERE: Error Occured, while reading TestScript File in execKeywordScript  null
+]]></system-err>
+</testsuite>

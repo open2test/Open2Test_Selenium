@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-03-08T16:32:55</date>
+  <millis>1488970975906</millis>
+  <sequence>0</sequence>
+  <logger>SeleniumWD.SeleniumWD</logger>
+  <level>CONFIG</level>
+  <class>SeleniumWD.SeleniumWD</class>
+  <method>LoadLog</method>
+  <thread>1</thread>
+  <message>Configuration done.</message>
+</record>
+<record>
+  <date>2017-03-08T16:32:56</date>
+  <millis>1488970976000</millis>
+  <sequence>1</sequence>
+  <logger>SeleniumWD.SeleniumWD</logger>
+  <level>FINE</level>
+  <class>SeleniumWD.SeleniumWD</class>
+  <method>LoadLog</method>
+  <thread>1</thread>
+  <message>Finer logged</message>
+</record>
+<record>
+  <date>2017-03-08T19:33:02</date>
+  <millis>1488981782909</millis>
+  <sequence>2</sequence>
+  <logger>SeleniumWD.SeleniumWD</logger>
+  <level>SEVERE</level>
+  <class>SeleniumWD.SeleniumWD</class>
+  <method>setBrowser</method>
+  <thread>1</thread>
+  <message>Error :Check the Test Suite file contentsCould not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'INPUNSSP700004', ip: '10.232.58.177', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_51'
+Driver info: driver.version: InternetExplorerDriver</message>
+</record>
+<record>
+  <date>2017-03-08T19:33:46</date>
+  <millis>1488981826885</millis>
+  <sequence>3</sequence>
+  <logger>SeleniumWD.SeleniumWD</logger>
+  <level>SEVERE</level>
+  <class>SeleniumWD.SeleniumWD</class>
+  <method>execKeywordScript</method>
+  <thread>1</thread>
+  <message>Error Occured, while reading TestScript File in execKeywordScript  null</message>
+</record>
+</log>
