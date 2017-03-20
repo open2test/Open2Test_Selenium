@@ -226,4 +226,234 @@ Let’s understand, how Open2Test for selenium framework works
    ![TestScript_TestData](TestScript_TestDatat.png "Test Scripts Reads Test Data")
    
    
+### Introduction to O2T Keywords
+#### Keyword: "launchapp"
+#### Brief Description:
+            Launches the given URL
+#### Syntax 
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|launchapp|https://www.google.com |   |   |Launching the Website|
+
+In above table – These are the Excel columns with Keyword launchapp given in second {B} column  
+  and in Object Details column  [C] has the URL to launch.
+  
+
+#### Keyword: "importdata"
+
+#### Brief Description: Imports the Data from the given path (Data Sheet path)
+
+#### Syntax 
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|importdata|E:\AAVmwareDemo\ |   |   |Imports  the Data from the given path (Data Sheet path)|
+
+
+#### Keyword: "screencaptureoption"
+#### Brief Description: Captures the screen shot for all the Perform/Storevalue/Check test steps, if indicated in the Object column
+#### Syntax 
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|screencaptureoption|Perform;>>;Storevalue;Check |   |   |Captures the screen shot for all the Perform test steps,if indicated in the Object column|
+                                                
+##### EXAMPLE 
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|screencaptureoption|perform |   |   |   |
+
+
+#### Keyword: "perform"
+#### Brief Description: Captures the screen shot for all the Perform/Storevalue/Check test steps, if indicated in the Object column
+#### Syntax 
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|perform|  <TextBox/ CheckBox/ RadioButton/ Button/ Link/ ComboBox/ TextArea/ Image/ Frame/ iFrame/ Table/element>;<Object Name>|click, altclick;enter; hover; Select; Set; Check etc.|   |Clicks/Hovers/Select/Set the Selected/located object|
+
+##### EXAMPLE
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|perform|Button;btn_Submit | Click  |   |  Clicks on Button which locator [ID ,Xpath, etc.] is stored in OR and name is given as btn_Submit by user. |
+
+                                                
+#### Keyword: "check"
+#### Brief Description: Returns whether object is Visible or not. If so True, else False; Returns whether object is enabled or not. If so True, else False; Checks the Text property of the given object.checks the displayed text of the link.Validate the selected item from the combobox.Data table variables/ Environment variables can be used here for value to compare 
+
+#### Syntax 
+
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|Check|  <TextBox/ CheckBox/ RadioButton/ Button/ Link/ ComboBox/ TextArea/ Image/ Table/ListBox/element>;<Object Name>|Visible:<True/False> enabled:<True/False> text:<Text to compare> linktext:<Text to compare> value:<value to be compare> checked:<ON/OFF>.|   |Returns whether object is Visible /Enable/ or not. Compares the text, Checks the link text etc.|
+
+##### EXAMPLE
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|check|Button;btn_Submit | enabled:<True/False>  |   |  Checks if btn_submit is enabled or not |
+
+#### Keyword: "storevalue"
+#### Brief Description: Assigns the display status of the element in a variable. 
+#### Syntax 
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|storevalue|  <TextBox/ CheckBox/ RadioButton/ Button/ Link/ ComboBox/ TextArea/ Image/ Table/ListBox/element>;<Object Name>|Visible:<Variable Name> enabled:<Variable Name> value:<VariableName> linktext:<VariableName>|   |Assigns the text value / display status / object is enabled or not/ Assigns selected / Stores the linktextitem  of the element to a variable|
+
+##### EXAMPLE
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|storevalue|Button;btn_Submit | enabled:variable1  |   |  It will assign the True value to variable variable1 if button is enabled else it will assign false. |
+
+#### Keyword: "loop" . . . "Endloop"
+#### Brief Description: Executes the statements inside the loop for <count> iterations. All the statements in the between  loop ..endloop will get execute till given count.
+#### Syntax 
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|loop|  count|   |It will start iterating from this row|
+| r	|endloop|    |    |It will stop iterating on this row|
+
+
+
+##### EXAMPLE
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|loop|3 |    |    |  Iteration will start - and it will iterate for 3 times |
+| r |perform|	Button;btn_Submit|	click|    |Clicks the button|
+| r	|storevalue|Button;btn_Submit | enabled:variable1  |    |  It will assign the True value to variable variable1 if button is enabled else it will assign false. |
+| r	|endloop|    |    |    |  stops the loop  |
+
+#### Keyword: "context"
+#### Brief Description: Use to switch the context to the frame / parent Frame / iframe/child frame/page/paagetitle. 
+ Once you switch the context to the frame, you will be able to access and work on the elements inside the frame.
+#### Syntax
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|context| <frame/iframe;frame object name> <browser;WebBrowser> <frame/iframe;browser;WebBrowser> <Page;pagetitle browser;WebBrowser>|  page;<pagetitle>::<frame/iframe>;<frame object name> page;<pagetitle>::<frame/iframe>; page;<pagetitle>|    |Use to switch the context to the frame / parent Frame / iframe/child frame/page/paagetitle|
+
+
+##### EXAMPLE
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|context|Frame;UserDetails | enabled:Frame1  |   |  Control will switch to the Frame1. |
+| r	|context|Browser;Individual Health Plans | page:Individual Health Plans |   |  Control will switch to page of name “Individual Health Plans |
+
+#### Keyword: "upload"
+##### Brief Description:  Upload the file. Precondition: A file upload dialog is Open If Cancel/Close action is given then closes the upload dialogue 
+#### Syntax 
+
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|upload| File path  in C column of Test Script|     |    |Upload the file . Precondition: A file upload dialog is Open|
+| r	|upload| File path  in C column of Test Script|  closeupload/ cancel upload   |    |Close file upload dialog. Precondition: A file upload dialog is Open|
+
+##### EXAMPLE
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|upload|C:\Users\076533\Desktop\OLDDESK\dcxccz.png|    |    |  Upload the file  |
+| r	|upload|C:\Users\076533\Desktop\OLDDESK\dcxccz.png | cancelupload |   |  Close file upload dialog |
+
+#### Keyword: perform    *(Calendar control)*
+#### Brief Description:  It will set date in calendar control, with condition that object type is Calendar and object name should be prefixed by cal_
+#### Syntax 
+Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|perform  | calendar:cal_Calendar1|  setdate:<Date in mm-dd-yyyy format only>|    | It will set date in calendar control|
+
+*Object type is calendar and object name will start with cal_ on which this keyword can be applicable. Column Action is having Action as Setdate which accepts date given in mm-dd-yyyy format only*
+
+
+##### EXAMPLE
+|Run|	Keyword|ObjectDetails |Action|Action2|Comments|
+|---|:-------|:-------------|:-----|:------|-------:|
+| r	|perform  |calendar;cal_calendar1|setdate:dt_12-21-2017 |    |  It will set the date as 21 Dec 2017 in selected calendar. |
+
+
+### Appendix A
+
+#### Layers in Keyword-Driven Testing:
+Keyword-Driven Testing can be organized by using one or more layers. Typical layers are
+
+ #### End user domain layer 
+ #### Test interface layer.
+
+While many implementations of Keyword-Driven Testing will comprise two or three abstraction layers, 
+in some cases it may be necessary to structure keywords in more layers.
+
+#### Abstract layer:
+The topmost layer is the most abstract layer which is generally aligned with the wording of the application's users. 
+In practice, the topmost layer is usually the domain layer. 
+However, in some situations the domain layer may not be required, and another, more abstract layer is used 
+(e.g. if the test cases are supposed to span several different end user domains, a Meta domain layer can be introduced).
+
+#### Detailed layer:
+The lowest layer is the most detailed layer. It is commonly aligned with the names of test interface elements   
+in practice, this layer is usually, but not always, the test interface layer (e.g. asSometimes a test interface layer 
+is not required, or for specific reasons, even more detailed layers may be used).  
+    Most Keyword-Driven Test systems will have more than one layer due to factors such as having understandable
+    keyword test cases, maintainability and division of work relying on a multi-layer structure. If only one layer 
+    is implemented, it will commonly be either at a low level, which affects the readability of the keyword test cases,
+    or at a high level, which can result in more keyword execution code.
+    
+ ### Types of keywords
+ 
+#### Simple keywords
+       
+Simple keywords, which are often used at the test interface layer (e.g. "MenuSelect" or "PressButton"), can be the
+connection between the test execution tool and higher level keywords at an intermediate layer or domain layer.
+    Using only keywords at the test interface layer can be sufficient for the definition of test cases and their execution. 
+    Exclusive use of simple keywords will lead to test cases with many actions. Depending on the test item, keywords at the test
+    interface layer could need to interact with different systems such as databases, the system registry or SOA-Messages.
+           In a similar way, the automation framework will support access to the test interface or other interfaces on
+           which the keyword operates (e.g. mouse, keyboard, and touch screen).
+           
+                 
+#### Composite keywords
+        
+Simple keywords are sufficient to compose and execute test cases but are often insufficient to reflect 
+functional features. Composite keywords are keywords composed from other keywords. This means that keywords 
+can be organized in different layers (see 5.2). For composite keywords, composite parameters (e.g. a data structure) 
+can be required. It is often useful to use business-level keywords, such as “login user“. This keyword may be composed
+of a sequence of lower level keywords, such as “enter username“, “enter password“ and "push login-button“. 
+For more complex business objects, such as large forms for the preparation of contracts, a keyword like 
+“filloutContractformPage1” can be valuable.
+   A composite keyword is a ‘package’ containing a sequence of other keywords. The set of parameters for a 
+composite keyword can be the union of the set of parameters of the keywords that comprise the composite keyword;
+sometimes however, the implementer of a composite keyword may choose to ‘hide’ one or more parameters by 
+assigning it a literal value within the composite.
+       
+ #### Navigation/interaction (input) and verification (output)
+
+ *Keywords may be classified into at least two categories:*
+ 
+#### Navigation steps (i.e. input to the test item) and
+#### Verification steps (i.e. output from test item).
+
+Most keywords belong to the first category, (i.e. the navigation steps) because most actions are needed to prepare
+the test item or perform certain actions on it which will lead to a result. Navigation steps usually are steps 
+that do not verify and log the test result.
+
+
+The result is then checked by one or more other actions i.e. the verification steps.
+
+The verification steps are related to the result of the test case. For example, if the condition of a verification
+step is not met, then the test result will be set to "failed".
+
+It may be useful to allow navigation steps to be used for verification.
+
+ #### Keyword Driven Framework
+   
+   ![Keyword_driven](Keyword_driven.png "Keyword Driven Framework")
+
+
+#### Keywords and Data
+Keyword-Driven Testing can be enhanced if keywords are associated with data. To allow an association with data,
+in many cases keywords will need to have parameters which may be fixed, or list driven.
+       Most keywords will need to have at least one parameter to specify the object they apply to. 
+       Some will need another parameter to specify input, (e.g., true/false, a string to type, an 
+       option to select in a combo box). This input will generally depend on the type of control and the type of action.
+       
+       
+
+
+
+
+
+
 
