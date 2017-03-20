@@ -138,6 +138,70 @@ Public String utilityFilePath=
 
 3.	Select the appropriate browser. And make sure the browser driver is matching /compatible with selected browser. 
 
+#### Executing Gradle Project on Local Machine: 
+ Traverse to Root folder of the project on Command prompt.
+1. Use the command “gradle build” on Command prompt for executng the build . . . 	[Gradle Executin]
+2. Right Click on SeleniumWD.java file and select Run as Gradle Tests.     ……[Gradle Execution]
+3. Right Click on SeleniumWD.java file and select Run as Junit Tests.     ……[Java Execution]
+
+This will run the sample script file available in downloaded zip folder. 
+
+User can change the script and Object repository as per project requirement and continue to use. 
+
+#### Jenkins –                       *[Optional in case of Local configuration]*
+##### Download
+..* Download the Jenkins from <https://jenkins.io/>      … Zip file will get download.
+..* Download Jenkins.war  <https://updates.jenkins-ci.org/download/war/>         
+Unzip the Jenkins folder and paste the downloaded war (“Jenkins.war”) File to Jenkins folder.
+
+#### Subversion [SVN]:
+Download and configure SVN.
+<https://subversion.apache.org/download.cgi>
+
+#### Commit Project folder to SVN Repository 
+
+*1. Go to workspace directory of current project.*
+
+*2. Copy Project folder and past it to SVN repository.*
+
+*3. Commit and update the SVN.*
+
+#### Jenkins Project Configuration 
+
+Traverse to Jenkins folder on command prompt
+Execute the command    “ Java -jar jenkins.war” 
+
+Once Jenkins is fully up and running, open URL in browser 
+<http://localhost:8080>
+Jenkins log in screen will get displayed. 
+
+By default – Jenkins username is Admin and password can be get it from initialAdminPassword.txt file which is available in secrets folder of Jenkins
+Jenkins Dashboard will get open 
+
+Add Plugins : 
+Add following plugins by traversing on Manage Jenkins ---> Manage PlugIns
+--->Gradle Plugin
+--->Subversion release manager plugins.
+
+##### Create new Item in Jenkins. 
+
+*	Click on New Item -to create the Build
+-	Select the Project Type - Free Style
+-	Fill the general Tab - Enter Description
+-	In Source code management - Select Subversion
+-	Enter Required Details Repository URL and Credentials
+-	Click on Add build step  - Select Invoke Gradle script as it is Gradle project
+
+                  *(Build Tab will get open with the Gradle details - No change required in this)*
+-	Click on Save Button
+-	Demo build page will get enable - where Build now link is visible
+-	Click on Build Now link 
+-	Check the status on Console
+
+### How Open2Test works
+Let’s understand, how Open2Test for selenium framework works
+   #### Higher Level Overview
+
 
 
 
