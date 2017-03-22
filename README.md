@@ -10,13 +10,31 @@ Open2Test framework is open source framework developed by Open source team of NT
   ### Index
   
  
-  [Features](<####Salient-Features-Of-Keyword-Driven-Testing>)
+  [Features](####Salient-Features-Of-Keyword-Driven-Testing)
   
   [Architecture](####Architecture-Of-Open2Test-Framework)
   
   [Workflow](####Work-Flow-Diagram-of-Open2Test-Framework)
   
-  [Installation](###Installation–Instructions-for-Automation-Beginner)
+  [Installation](####Installation–Instructions-for-Automation-Beginner)
+  
+  [Configuration](###-Configuration-)
+  
+  [How to Use](###How-to-Use)
+  
+  [Scripting](####Sample-Scripting)
+  
+  [Continuous Integration](####-Jenkins-)
+  
+  [How O2T Works](###How-Open2Test-Works)
+  
+  [Keywords](###Introduction-To-O2T-Keywords)
+  
+  [Appendix](###Appendix-A)
+  
+  
+  
+  
   
   
   
@@ -78,7 +96,7 @@ Subversion [SVN ] Repository|	1.6.12|	1.6.12|	Code repository|
 Open2Test|   |   |			Keyword driven framework|
 
 
-### Configuration:
+### Configuration
 #### Open2Test:
 Download / Clone open2Test Selenium Framework of Selenium WebDriver from Git-hub.
 #### Java & Eclipse:   
@@ -141,7 +159,7 @@ If everything goes well, Gradle project will get import with following folder st
 ![folder_structure](https://cloud.githubusercontent.com/assets/25658523/24182616/07bac4e8-0ee9-11e7-8f67-a71db53c7983.png)
 
 
-#### Sample Scripting:
+#### Sample Scripting
 Please refer sample scripting from downloaded zip. 
 1.	Change the path of variable utilityFilePath from setting.java file to SeleniumUtility file of downloaded /cloned folder. 
     E.g.  
