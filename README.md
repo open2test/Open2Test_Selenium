@@ -14,7 +14,7 @@ Open2Test framework is open source framework developed by Open source team of NT
   
   [Architecture](#architecture-of-open2test-framework)
   
-   [Installation](#installation–instructions-for-automation-beginner)
+   [Installation](#installation)
   
   [Configuration](#configuration)
   
@@ -78,9 +78,11 @@ Open2Test framework is open source framework developed by Open source team of NT
 
 ![o2t_workflow](https://cloud.githubusercontent.com/assets/25658523/24182611/fef3e484-0ee8-11e7-88c9-e1515e30a53f.png)
 
-## Installation Instructions For Automation Beginner 
+## Installation
 
-### Pre-Requisite
+### Installation Instructions For Automation Beginner 
+
+#### Pre-Requisite
 
 
 |Tools/Software |	Version |	Verified Version |	Comments |
