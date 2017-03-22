@@ -38,7 +38,7 @@ Open2Test framework is open source framework developed by Open source team of NT
   
   
   
-#### Salient Features of Keyword Driven Testing
+## Salient Features of Keyword Driven Testing
  
 #### Natural language: - 
                        Keywords can be defined in natural language meaning that, test cases can be 
@@ -71,7 +71,7 @@ Open2Test framework is open source framework developed by Open source team of NT
 
 ####            Please refer Appendix A – for further Keyword driven testing information 
 
-####  Architecture Of Open2Test Framework 
+##  Architecture Of Open2Test Framework 
 
 ![o2t_architecture](https://cloud.githubusercontent.com/assets/25658523/24182574/c84894b6-0ee8-11e7-98e5-8fdb4a1f91f9.png)
 
@@ -79,7 +79,7 @@ Open2Test framework is open source framework developed by Open source team of NT
 
 ![o2t_workflow](https://cloud.githubusercontent.com/assets/25658523/24182611/fef3e484-0ee8-11e7-88c9-e1515e30a53f.png)
 
-### Installation – Instructions for Automation Beginner  
+## Installation – Instructions for Automation Beginner  
 
 |Tools/Software |	Version |	Verified Version |	Comments |
 |---------|:--------|:-----------------|----------:|
@@ -96,7 +96,7 @@ Subversion [SVN ] Repository|	1.6.12|	1.6.12|	Code repository|
 Open2Test|   |   |			Keyword driven framework|
 
 
-### Configuration
+## Configuration
 #### Open2Test:
 Download / Clone open2Test Selenium Framework of Selenium WebDriver from Git-hub.
 #### Java & Eclipse:   
@@ -123,7 +123,7 @@ Gradle-3.2.1-all.zip file will get download. [Current version is 3.3]
  
 In Eclipse --->  Help ---> Marketplace ---> Search and Install plug in called *“Buildship Gradle Integration2.0”*
 
-### How to Use
+## How to Use
                      Import the downloaded Open2Test Project 
           
 #### Importing Open2Test Gradle Project
@@ -159,7 +159,7 @@ If everything goes well, Gradle project will get import with following folder st
 ![folder_structure](https://cloud.githubusercontent.com/assets/25658523/24182616/07bac4e8-0ee9-11e7-8f67-a71db53c7983.png)
 
 
-#### Sample Scripting
+## Sample Scripting
 Please refer sample scripting from downloaded zip. 
 1.	Change the path of variable utilityFilePath from setting.java file to SeleniumUtility file of downloaded /cloned folder. 
     E.g.  
@@ -181,7 +181,10 @@ This will run the sample script file available in downloaded zip folder.
 
 User can change the script and Object repository as per project requirement and continue to use. 
 
-#### Jenkins –                       *[Optional in case of Local configuration]*
+## Jenkins
+
+                                          *[Optional in case of Local configuration]*
+
 ##### Download
 
   * Download the Jenkins from <https://jenkins.io/>      … Zip file will get download.*
@@ -234,7 +237,7 @@ Add following plugins by traversing on Manage Jenkins ---> Manage PlugIns
 -	Click on Build Now link 
 -	Check the status on Console
 
-### How Open2Test works
+## How Open2Test works
 Let’s understand, how Open2Test for selenium framework works
    #### Higher Level Overview
 
@@ -257,7 +260,8 @@ Let’s understand, how Open2Test for selenium framework works
   ![testscript_testdata](https://cloud.githubusercontent.com/assets/25658523/24182662/2dd0a742-0ee9-11e7-8d4c-d824640668d9.png)
    
    
-### Introduction to O2T Keywords
+## Introduction to O2T Keywords
+
 #### Keyword: "launchapp"
 #### Brief Description:
             Launches the given URL
@@ -396,7 +400,7 @@ Run|	Keyword|ObjectDetails |Action|Action2|Comments|
 | r	|perform  |calendar;cal_calendar1|setdate:dt_12-21-2017 |    |  It will set the date as 21 Dec 2017 in selected calendar. |
 
 
-### Appendix A
+## Appendix A
 
 #### Layers in Keyword-Driven Testing:
 Keyword-Driven Testing can be organized by using one or more layers. Typical layers are
