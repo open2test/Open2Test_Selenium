@@ -1,4 +1,4 @@
-# Open2Test_Selenium 
+# Open2Test_Selenium     ![o2t_logo](https://cloud.githubusercontent.com/assets/25658523/24182607/f9231ce6-0ee8-11e7-821d-cbfe20dda15b.jpg)
 
 Open2Test_Selenium is Keyword driven Framework - supporting Continuous Integration using Gradle and Jenkins
 
@@ -42,11 +42,11 @@ Open2Test framework is open source framework developed by Open source team of NT
 
 ####  Architecture Of Open2Test Framework 
 
-![Architectre](O2T_Architecture.png "Architecture Of Open2Test Framework ")
+![o2t_architecture](https://cloud.githubusercontent.com/assets/25658523/24182574/c84894b6-0ee8-11e7-98e5-8fdb4a1f91f9.png)
 
 #### Work Flow Diagram of Open2Test Framework
 
-![WorkFlow](O2T_WorkFlow.png "Work Flow Of Open2Test Framework ")
+![o2t_workflow](https://cloud.githubusercontent.com/assets/25658523/24182611/fef3e484-0ee8-11e7-88c9-e1515e30a53f.png)
 
 ### Installation – Instructions for Automation Beginner  
 
@@ -125,8 +125,8 @@ In Eclipse --->  Help ---> Marketplace ---> Search and Install plug in called *�
 
 If everything goes well, Gradle project will get import with following folder structure 
 
+![folder_structure](https://cloud.githubusercontent.com/assets/25658523/24182616/07bac4e8-0ee9-11e7-8f67-a71db53c7983.png)
 
-![Folder](Folder_Structure.png "Folder Structure of Imported Project")
 
 #### Sample Scripting:
 Please refer sample scripting from downloaded zip. 
@@ -207,23 +207,23 @@ Add following plugins by traversing on Manage Jenkins ---> Manage PlugIns
 Let’s understand, how Open2Test for selenium framework works
    #### Higher Level Overview
 
-![Higher_Overview](Higher_overview.png "Higher Level Overview")
+![higher_overview](https://cloud.githubusercontent.com/assets/25658523/24182621/0b05d2dc-0ee9-11e7-8c56-350132c0563d.png)
 
    #### Read Utility File
    
-   ![Read_utili](Read_util.png "Read Utility File")
+ ![read_util](https://cloud.githubusercontent.com/assets/25658523/24182627/1980b5ac-0ee9-11e7-8878-2f9e2fe46d7a.png)
    
    #### Script Execution
    
-   ![Script_Execute](Script_Execute.png "Script Execution")
+   ![script_execute](https://cloud.githubusercontent.com/assets/25658523/24182650/277a74cc-0ee9-11e7-848e-3362827b3686.png)
    
    
    #### Test Suite to Test Script
-   ![TestSuite_TestScript](TestSuite_TestScript.png "Test Suite to Test Script")
+![testsuite_testscript](https://cloud.githubusercontent.com/assets/25658523/24182668/3430d4ae-0ee9-11e7-8657-911301c2405c.png)
    
    #### Test Scripts Reads Test Data
    
-   ![TestScript_TestData](TestScript_TestDatat.png "Test Scripts Reads Test Data")
+  ![testscript_testdata](https://cloud.githubusercontent.com/assets/25658523/24182662/2dd0a742-0ee9-11e7-8d4c-d824640668d9.png)
    
    
 ### Introduction to O2T Keywords
@@ -439,7 +439,7 @@ It may be useful to allow navigation steps to be used for verification.
 
  #### Keyword Driven Framework
    
-   ![Keyword_driven](Keyword_driven.png "Keyword Driven Framework")
+  ![keyword_driven](https://cloud.githubusercontent.com/assets/25658523/24182623/11bde722-0ee9-11e7-81cb-d05f58cfa516.png)
 
 
 #### Keywords and Data
