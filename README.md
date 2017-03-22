@@ -7,8 +7,21 @@ Open2Test_Selenium is Keyword driven Framework - supporting Continuous Integrati
 Open2Test framework is open source framework developed by Open source team of NTTDATA INC.
   This is framework developed for automation testing using Selenium. Aim of Open2Test framework is to provide easy way to approach automation testing. Keyword based solution formed on the premise that makes any application to be described using short text description or keywords.
   
- ### Salient Feature of Keyword Driven Testing
-
+  ### Index
+  
+ 
+  [Features](<####Salient-Features-Of-Keyword-Driven-Testing>)
+  
+  [Architecture](####Architecture-Of-Open2Test-Framework)
+  
+  [Workflow](####Work-Flow-Diagram-of-Open2Test-Framework)
+  
+  [Installation](###Installation–Instructions-for-Automation-Beginner)
+  
+  
+  
+#### Salient Features of Keyword Driven Testing
+ 
 #### Natural language: - 
                        Keywords can be defined in natural language meaning that, test cases can be 
                        written with more or less detail, depending on the project's needs.
