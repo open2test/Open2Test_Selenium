@@ -10,7 +10,7 @@ Open2Test framework is open source framework developed by Open source team of NT
   ### Index
   
  
-  [Features](####Salient-Features-Of-Keyword-Driven-Testing)
+  [Features](#Salient-Features-Of-Keyword-Driven-Testing)
   
   [Architecture](####Architecture-Of-Open2Test-Framework)
   
