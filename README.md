@@ -26,7 +26,7 @@ Open2Test framework is open source framework developed by Open source team of NT
   
   [How O2T Works](#how-open2test-works)
   
-  [Keywords](#introduction-to-O2t-keywords)
+  [Keywords](#introduction-to-o2t-keywords)
   
   [Appendix](#appendix-a)
   
