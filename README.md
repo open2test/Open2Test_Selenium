@@ -175,6 +175,7 @@ Public String utilityFilePath=
                              local downloaded folder structure.
 
 3.	Select the appropriate browser. And make sure the browser driver is matching /compatible with selected browser. 
+         Browser driver exe given here is for Windows 32 bit. Download 64 bit from - *http://www.seleniumhq.org/download/*
 
 #### Executing Gradle Project on Local Machine: 
  Traverse to Root folder of the project on Command prompt.
