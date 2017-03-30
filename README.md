@@ -39,8 +39,8 @@ Open2Test framework is open source framework developed by Open source team of NT
 ## Salient Features of Keyword Driven Testing
  
 #### Natural language: - 
-                       Keywords can be defined in natural language meaning that, test cases can be 
-                       written with more or less detail, depending on the project's needs.
+                       ""Keywords can be defined in natural language meaning that, test cases can be 
+                       written with more or less detail, depending on the project's needs.""
 
 #### Not require technical understanding:-
                          Testers working at the business level do not require technical understanding 
